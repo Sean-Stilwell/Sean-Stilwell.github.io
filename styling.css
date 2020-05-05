@@ -4,32 +4,38 @@
 }
 
 body {
-    background-color: #274e91;
+    background-color: #31436b;
     font-family: verdana;
     color: #ffffff;
-    text-align: center;
-    padding-left:110;
-    padding-right:110;
+    text-align: left;
+    padding-left:300;
+    padding-right:300;
     padding-top:30;
+}
+.Intro {
+    text-align: center;
 }
 
 h1 {
-    font-size: 400%;
+    font-size: 500%;
 }
-
 h2 {
     font-size: 200%;
     padding-top: 30;
 }
+h3 {
+    font-size: 120%;
+    padding-top: 30;
+}
 
 p {
-    padding-top: 20;
+    padding-top: 8;
+    padding-bottom: 4;
 }
 
 img {
-    padding-left:20;
-    padding-right:20;
     padding-top:0;
+    padding-right:5;
 }
 
 a {
