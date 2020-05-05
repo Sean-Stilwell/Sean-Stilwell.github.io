@@ -1,0 +1,20 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #8f001a;
+    font-family: verdana;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 400%;
+
+}
+
+a {
+    color: white;
+}
