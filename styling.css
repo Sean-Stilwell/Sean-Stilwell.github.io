@@ -4,15 +4,32 @@
 }
 
 body {
-    background-color: #8f001a;
+    background-color: #274e91;
     font-family: verdana;
-    color: white;
+    color: #ffffff;
     text-align: center;
+    padding-left:110;
+    padding-right:110;
+    padding-top:30;
 }
 
 h1 {
     font-size: 400%;
+}
 
+h2 {
+    font-size: 200%;
+    padding-top: 30;
+}
+
+p {
+    padding-top: 20;
+}
+
+img {
+    padding-left:20;
+    padding-right:20;
+    padding-top:0;
 }
 
 a {
