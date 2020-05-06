@@ -3,19 +3,22 @@
     padding:0;
 }
 
+/*overall styles - body & intro*/
 body {
-    background-color: #0d2457;
+    background-color: #112e70;
     font-family: verdana;
     color: #ffffff;
     text-align: left;
     padding-left:300;
     padding-right:300;
     padding-top:30;
+    padding-bottom:30;
 }
 .Intro {
     text-align: center;
 }
 
+/*headings*/
 h1 {
     font-size: 500%;
 }
@@ -25,19 +28,21 @@ h2 {
 }
 h3 {
     font-size: 120%;
-    padding-top: 30;
+    padding-top: 10;
 }
 
+/*general*/
+ul {
+    padding-bottom: 10;
+}
 p {
-    padding-top: 8;
-    padding-bottom: 4;
+    padding-top: 10;
+    padding-bottom: 6;
 }
-
 img {
     padding-top:0;
     padding-right:5;
 }
-
 a {
     color: white;
 }
