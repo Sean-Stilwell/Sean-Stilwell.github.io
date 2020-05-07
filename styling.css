@@ -18,6 +18,10 @@ body {
     text-align: center;
 }
 
+.grouping{
+    padding-right:30;
+}
+
 /*headings*/
 h1 {
     font-size: 500%;
