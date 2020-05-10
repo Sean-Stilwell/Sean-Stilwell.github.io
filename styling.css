@@ -5,12 +5,12 @@
 
 /*overall styles - body & intro*/
 body {
-    background-color: #112e70;
+    background-color: #222222;
     font-family: verdana;
     color: #ffffff;
     text-align: left;
-    padding-left:300;
-    padding-right:300;
+    padding-left:15%;
+    padding-right:15%;
     padding-top:30;
     padding-bottom:80;
 }
@@ -32,18 +32,21 @@ h2 {
     padding-bottom: 15;
 }
 h3 {
-    font-size: 120%;
+    font-size: 130%;
     padding-top: 10;
+    text-decoration: underline;
 }
 
 /*general*/
 ul {
     padding-top: 10;
     padding-bottom: 10;
+    font-size: 110%;
 }
 p {
     padding-top: 10;
     padding-bottom: 6;
+    font-size: 110%;
 }
 img {
     padding-top:0;
