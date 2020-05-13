@@ -19,7 +19,7 @@ body {
 }
 
 .grouping{
-    padding-right:30;
+    padding-right:40;
 }
 
 .About {
@@ -37,8 +37,7 @@ h2 {
 }
 h3 {
     font-size: 130%;
-    padding-top: 10;
-    text-decoration: underline;
+    padding-top: 30;
 }
 
 /*general*/
@@ -55,7 +54,6 @@ p {
 img {
     padding-top:0;
     padding-right:5;
-    padding-bottom:15;
 }
 a {
     color: white;
