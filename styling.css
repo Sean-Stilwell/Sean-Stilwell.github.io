@@ -20,6 +20,7 @@ body {
 
 .grouping{
     padding-right:40;
+    display: inline-block
 }
 
 .About {
