@@ -5,7 +5,7 @@
 
 /*overall styles - body & intro*/
 body {
-    background-color: #0c0c0c;
+    background-color: #161616;
     font-family: verdana;
     color: #ffffff;
     text-align: left;
@@ -16,29 +16,43 @@ body {
 }
 .Intro {
     text-align: center;
+    padding-left:20%;
+    padding-right:20%;
+    font-size: 120%;
 }
 
 .grouping{
-    padding-right:40;
+    padding-right:50;
     display: inline-block
+}
+
+.contact{
+    padding-top: 60;
+    text-align: center;
+}
+.contactgroup {
+    padding-left: 15;
+    padding-right: 15;
 }
 
 .About {
     padding-bottom:20;
+    padding-top: 20;
 }
 
 /*headings*/
 h1 {
-    font-size: 450%;
+    font-size: 350%;
 }
 h2 {
     font-size: 200%;
-    padding-top: 15;
+    padding-top: 30;
     padding-bottom: 15;
 }
 h3 {
     font-size: 130%;
-    padding-top: 30;
+    padding-top: 15;
+    padding-bottom: 5;
 }
 
 /*general*/
@@ -48,13 +62,9 @@ ul {
     font-size: 110%;
 }
 p {
-    padding-top: 10;
+    padding-top: 6;
     padding-bottom: 6;
     font-size: 110%;
-}
-img {
-    padding-top:0;
-    padding-right:5;
 }
 a {
     color: white;
