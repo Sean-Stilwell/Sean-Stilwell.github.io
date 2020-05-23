@@ -8,14 +8,13 @@ body {
     background-color: #161616;
     font-family: verdana;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     padding-left:12%;
     padding-right:12%;
     padding-top:30;
     padding-bottom:80;
 }
 .Intro {
-    text-align: center;
     padding-left:10%;
     padding-right:10%;
     font-size: 120%;
@@ -28,7 +27,6 @@ body {
 
 .contact{
     padding-top: 60;
-    text-align: center;
 }
 .contactgroup {
     padding-left: 15;
@@ -50,10 +48,9 @@ h1 {
     font-size: 350%;
 }
 h2 {
-    font-size: 200%;
+    font-size: 220%;
     padding-top: 30;
     padding-bottom: 15;
-    text-align:center;
 }
 h3 {
     font-size: 130%;
