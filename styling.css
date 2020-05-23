@@ -40,6 +40,11 @@ body {
     padding-top: 20;
 }
 
+.project{
+    padding-top:8;
+    padding-bottom:8;
+}
+
 /*headings*/
 h1 {
     font-size: 350%;
