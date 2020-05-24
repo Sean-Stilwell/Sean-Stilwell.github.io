@@ -1,6 +1,5 @@
 * {
     margin:0;
-    padding:0;
 }
 
 body {
@@ -19,6 +18,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.footer {
+    padding-top: 50;
+    padding-bottom: 50;
+    font-size: 70%;
 }
 
 h1{
