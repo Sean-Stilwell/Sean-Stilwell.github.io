@@ -29,7 +29,7 @@
                     var targetGrade = parseInt(document.getElementById("targetgrade").value, 10);
                     var finalValue = parseInt(document.getElementById("finalvalue").value, 10);
                     // Formula: (targetGrade − currentGrade × (100% − finalValue)) / finalValue
-                    var gradeNeeded = ((targetGrade * 100) - (100 - finalValue) * currentGrade) / finalValue;
+                    var gradeNeeded = (((targetGrade * 100) - (100 - finalValue) * currentGrade) / finalValue).toFixed(2);
                     if (gradeNeeded > 100){
                         alert("You need " + gradeNeeded + "% on the exam to get that mark. Hopefully you can get some bonus marks!");
                     }
@@ -48,8 +48,11 @@
                     else if (gradeNeeded > 0){
                         alert("You only need " + gradeNeeded + "% on the exam to get that mark. Will you even bother studying?");
                     }
+                    else if (gradeNeeded <= 0){
+                        alert("You only need " + gradeNeeded + "% on the exam to get that mark. Why even bother writing it?");
+                    }
                     else {
-                        alert("You only need " + gradeNeeded + "% on the exam to get that mark. Why even bother writing it?")
+                        alert("Hmm... Something went wrong! Make sure you're using numbers without decimals in the text boxes (and no letters!)");
                     }
                 }
             </script>
