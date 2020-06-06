@@ -1,0 +1,65 @@
+<HTML>
+    <HEAD>
+        <TITLE>Sean Stilwell</TITLE>
+        <link rel="stylesheet" href="stylingnew.css">
+        <link rel="icon" href="icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="sean stilwell, software developer, intern, student, developer, mobile, web, uottawa, sean, stilwell">
+
+    </HEAD>
+    <BODY>
+        <div class="nav">
+            <h1>
+                Sean Stilwell
+            </h1>
+            <H3>
+                <span class="link"><a href="index.html">Home</a></span>
+                <span class="link"><a href="aboutme.html">About Me</a></span>
+                <span class="link"><a href="projects.html">Projects</a></span>
+                <span class="link"><a href="contact.html">Contact</a></span>
+            </H3>
+        </div>
+        <div class="content">
+            <h2>Final Grade Calculator Tool</h2>
+            <div class="paragraph">This tool will calculate the final grade in percent that you need on your final exam to achieve your desired mark.</div>
+            <script language="JavaScript">
+                function clicked() {
+                    // Initialize the values
+                    var currentGrade = parseInt(document.getElementById("currentgrade").value, 10);
+                    var targetGrade = parseInt(document.getElementById("targetgrade").value, 10);
+                    var finalValue = parseInt(document.getElementById("finalvalue").value, 10);
+                    // Formula: (targetGrade − currentGrade × (100% − finalValue)) / finalValue
+                    var gradeNeeded = ((targetGrade * 100) - (100 - finalValue) * currentGrade) / finalValue;
+                    if (gradeNeeded > 100){
+                        alert("You need " + gradeNeeded + "% on the exam to get that mark. Hopefully you can get some bonus marks!");
+                    }
+                    else if (gradeNeeded > 80){
+                        alert("You need " + gradeNeeded + "% on the exam to get that mark. Study hard, you've got this!");
+                    }
+                    else if (gradeNeeded > 60){
+                        alert("You need " + gradeNeeded + "% on the exam to get that mark. Piece of cake!");
+                    }
+                    else if (gradeNeeded > 40){
+                        alert("You need " + gradeNeeded + "% on the exam to get that mark. You can definitely do better!");
+                    }
+                    else if (gradeNeeded > 20){
+                        alert("You only need " + gradeNeeded + "% on the exam to get that mark. Why not set your sights a little higher?");
+                    }
+                    else if (gradeNeeded > 0){
+                        alert("You only need " + gradeNeeded + "% on the exam to get that mark. Will you even bother studying?");
+                    }
+                    else {
+                        alert("You only need " + gradeNeeded + "% on the exam to get that mark. Why even bother writing it?")
+                    }
+                }
+            </script>
+            <label>My current mark is  </label><input type = "text" id = "currentgrade" class = "box" placeholder = "(eg: 84)"/> %<br /><br />
+            <label>I want my final mark to be  </label><input type = "text" id = "targetgrade" class = "box" placeholder = "(eg: 70)"/> %<br /><br />
+            <label>The exam is worth  </label><input type = "text" id = "finalvalue" class = "box" placeholder = "(eg: 40)" /> % of the final grade.<br /><br />
+            <input type = "submit" value = "Submit" name="submit" onclick="clicked()"/><br /><br /><br /><br />
+            <h3>How does the math work?</h3>
+            <div class="paragraph">For most classes, the final grade is a sum of the grades you've earned multiplied by their weight. For example, where homework is worth 30%, a midterm 25%, and a final exam 45%, the final grade would be 0.3 * Homework Average + 0.25 * Midterm Mark + 0.45 * Exam Mark.</div>
+            <div class="paragraph">Using simple algebra, you can rearrange this formula to solve for the mark you need on the final to get a mark you want. The formula for that is Exam Mark = (Target Mark - (Current Mark * (1 - Final Weight))) / Final Weight </div>
+        </div>
+    </BODY>
+</HTML>
