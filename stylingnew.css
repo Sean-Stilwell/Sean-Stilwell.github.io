@@ -83,7 +83,8 @@ em{
     padding-top: 25;
 }
 .grouping{
-    padding-right:50;
+    padding-right:25;
+    padding-left:25;
     display: inline-block
 }
 
