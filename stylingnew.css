@@ -29,15 +29,15 @@ body {
 }
 
 h1{
-    font-size: 650%;
+    font-size: 480%;
     padding-bottom:0;
 }
 h2 {
-    font-size: 250%;
+    font-size: 195%;
     padding-bottom:5;
 }
 h3{
-    font-size:160%;
+    font-size:140%;
 }
 
 .group {
@@ -58,7 +58,7 @@ h3{
 }
 a{
     color: white;
-    text-decoration: underline;
+    /* text-decoration: none; */
 }
 p{
     font-size:130%;
@@ -66,7 +66,7 @@ p{
 em{
     font-style:normal;
     font-weight:bold;
-    font-size:130%;
+    /* font-size:130%; */
 }
 .paragraph{
     padding-top: 15;
@@ -85,8 +85,8 @@ em{
 }
 .project{
     padding-top: 25;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .grouping{
     padding-right:25;
