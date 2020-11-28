@@ -34,7 +34,6 @@ h1{
 }
 h2 {
     font-size: 195%;
-    padding-bottom:5;
 }
 h3{
     font-size:140%;
@@ -92,4 +91,7 @@ em{
     padding-right:25;
     padding-left:25;
     display: inline-block
+}
+.employment h2{
+    padding-bottom:15;
 }
