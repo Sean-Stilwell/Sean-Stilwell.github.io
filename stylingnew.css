@@ -83,9 +83,10 @@ em{
     visibility: collapse;
 }
 .project{
-    padding-top: 25;
+    padding-top: 15;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 15;
 }
 .grouping{
     padding-right:25;
