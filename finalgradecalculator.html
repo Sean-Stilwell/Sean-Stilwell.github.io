@@ -2,6 +2,7 @@
     <HEAD>
         <TITLE>Sean Stilwell</TITLE>
         <link rel="stylesheet" href="stylingnew.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="icon" href="icon_zsw_icon.ico" type="image/gif" sizes="16x16">
         <meta property="og:image" content="https://i.imgur.com/hgYzYE5.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,18 +10,15 @@
 
     </HEAD>
     <BODY>
-        <div class="nav">
-            <h1>
-                Sean Stilwell
-            </h1>
-            <H3>
-                <span class="link"><a href="index.html">Home</a></span>
-                <span class="link"><a href="aboutme.html">About Me</a></span>
-                <span class="link"><a href="projects.html">Projects</a></span>
-                <span class="link"><a href="https://medium.com/@seanstilwell">Articles</a></span>
-            </H3>
-        </div>
-        <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h1 style="font-size: 550%;">Sean Stilwell</h1>
+                <a href="index.html" class="btn btn-dark btn-lg" role="button">Home</a>
+                <a href="aboutme.html" class="btn btn-dark btn-lg" role="button">About Me</a>
+                <a href="projects.html" class="btn btn-dark btn-lg" role="button">Projects</a>
+                <a href="https://medium.com/@seanstilwell" class="btn btn-dark btn-lg" role="button">Articles</a>
+            </div>
+            <p>Note: This page has not been optimized for my redesigned site.</p>
             <h2>Final Grade Calculator Tool</h2>
             <div class="paragraph">This tool will calculate the final grade in percent that you need on your final exam to achieve your desired mark.</div>
             <script language="JavaScript">
@@ -64,14 +62,20 @@
             <h3>How does the math work?</h3>
             <div class="paragraph">For most classes, the final grade is a sum of the grades you've earned multiplied by their weight. For example, where homework is worth 30%, a midterm 25%, and a final exam 45%, the final grade would be 0.3 * Homework Average + 0.25 * Midterm Mark + 0.45 * Exam Mark.</div>
             <div class="paragraph">Using simple algebra, you can rearrange this formula to solve for the mark you need on the final to get a mark you want. The formula for that is Exam Mark = (Target Mark - (Current Mark * (1 - Final Weight))) / Final Weight </div>
-        </div>
-        <div class="footer">
-            <a href="mailto:sstil051@uottawa.ca"><img src="images/email.png" height="30" width="30" title="Email" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/sean-stilwell/"><img src="images/linkedin.png" height="30" width="30" title="LinkedIn" alt="LinkedIn"></a>
-            <a href="https://github.com/Sean-Stilwell"><img src="images/github.png" height="30" width="30" title="GitHub" alt="GitHub"></a>
-            <a href="https://medium.com/@seanstilwell"><img src="images/medium.png" height="30" width="30" title="Medium" alt="Medium"></a>
-            <a href="https://leetcode.com/stilwell/"><img src="images/leetcode.png" height="30" width="30" title="LeetCode" alt="LeetCode"></a>
-            <P>Created by Sean Stilwell</P>
+        
+            <div class="jumbotron jumbotron-fluid text-center text-md-left" style="padding-top: 0; padding-bottom: 0;">
+                <div class="row" style="padding-top:20;">
+                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                        <p style="text-align: left; padding-left: 10px;">© 2020 Copyright: <a href="index.html"> Sean Stilwell</a></p>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12" style="text-align: right;"> 
+                        <a href="mailto:sstil051@uottawa.ca"><img src="image/email.png" alt="Email" height="18" width="25" style="margin-left:5px; margin-right:5px;"></a>
+                        <a href="https://www.linkedin.com/in/sean-stilwell/"><img src="image/linkedin.png" alt="LinkedIn" height="23" width="25" style="margin-left:5px; margin-right:5px;"></a>   
+                        <a href="https://github.com/Sean-Stilwell"><img src="image/github.png" alt="GitHub" height="25" width="25" style="margin-left:5px; margin-right:5px;"></a>   
+                        <a href="https://www.instagram.com/theseanstilwell/"><img src="image/instagram.png" alt="Instagram" height="25" width="25" style="margin-left:5px; margin-right:5px;"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </BODY>
 </HTML>

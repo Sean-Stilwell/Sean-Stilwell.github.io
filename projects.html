@@ -2,103 +2,74 @@
     <HEAD>
         <TITLE>Sean Stilwell</TITLE>
         <link rel="stylesheet" href="stylingnew.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
         <link rel="icon" href="icon_zsw_icon.ico" type="image/gif" sizes="16x16">
         <meta property="og:image" content="https://i.imgur.com/hgYzYE5.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="sean stilwell, software developer, intern, student, developer, mobile, web, uottawa, sean, stilwell, sean stillwell, shawn, stillwell, projects, html, css, javascript, java, c#, python, apps, github">
     </HEAD>
     <BODY>
-        <div class="nav">
-            <h1>
-                Sean Stilwell
-            </h1>
-            <H3>
-                <span class="link"><a href="index.html">Home</a></span>
-                <span class="link"><a href="aboutme.html">About Me</a></span>
-                <span class="link"><a href="projects.html">Projects</a></span>
-                <span class="link"><a href="https://medium.com/@seanstilwell">Articles</a></span>
-            </H3>
-        </div>
-        <div class="content">
-            <h2>Projects!</h2>
-            <div class="paragraph">I've completed a variety of projects for both academic purposes, to teach myself, or for fun. This page showcases some of my favourite work, along with links to their GitHub repos
-                (click the title of the project).</div>
-
-            <div class="project">
-                <a href="https://github.com/Sean-Stilwell/competitionapp"><p><em>MeFit Competition Management Web Application</em></p></a>
-                <p>This web application allows corporate partners to create and manage athletic competitions, as well as athletes participating in them, and their results. This application was created
-                    for my Databases I (CSI2532) class at uOttawa, and is developed using HTML5, CSS, and PHP, in addition to a PostgreSQL database.
-                </p>
-                <img src="images/html5.png" height="65" width="65" title="HTML5" alt="HTML5">
-                <img src="images/css.png" height="65" width="65" title="CSS" alt="CSS">
-                <img src="images/php.png" height="65" width="65" title="PHP" alt="PHP">
-                <img src="images/postgres.png" height="65" width="65" title="PostgreSQL" alt="PostgreSQL">
+        <div class="container">
+            <div class="page-header">
+                <h1 style="font-size: 550%;">Sean Stilwell</h1>
+                <a href="index.html" class="btn btn-dark btn-lg" role="button">Home</a>
+                <a href="aboutme.html" class="btn btn-dark btn-lg" role="button">About Me</a>
+                <a href="projects.html" class="btn btn-dark btn-lg" role="button">Projects</a>
+                <a href="https://medium.com/@seanstilwell" class="btn btn-dark btn-lg" role="button">Articles</a>
             </div>
 
-            <div class="project">
-                <a href="https://github.com/Sean-Stilwell/LightsOut"><p><em>Lights Out! Mobile Game</em></p></a>
-                <p>This is an Android game developed in Java using Android Studio, in which the player has a grid with the simple task of turning off all the lights. The catch? Toggling a light toggles the 
-                    adjacent ones as well. This game is based on previous work I had done in an Intro to Programming class.
-                </p>
-                <a href='https://play.google.com/store/apps/details?id=app.game.lightsout&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height="75" width="194"/></a>
+            <h2 style="font-size: 250%; text-align: center; padding-top: 20px;">Projects</h2>
+            <p style="padding-bottom: 30px;">I've completed a variety of projects for both academic purposes, to teach myself, or for fun. This page showcases some of my favourite projects, along with links to their GitHub repos to view their source code or links to download them for your own use!</p>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jumbotron" style="padding-top: 30px; padding-bottom: 30px;">
+                        <h4>MeFit Competition Management Web App</h4>
+                        <p>This web application allows corporate partners to create and manage athletic competitions, as well as athletes participating in them, and their results. This application was created for my Databases I (CSI2532) class at uOttawa, and is developed using HTML5, CSS, and PHP, in addition to a PostgreSQL database.</p>
+                        <a class="btn btn-dark btn-lg" href="https://github.com/Sean-Stilwell/competitionapp" role="button">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jumbotron" style="padding-top: 30px; padding-bottom: 30px;">
+                        <h4>Lights Out! Mobile Game</h4> 
+                        <p>This is an Android game developed in Java using Android Studio, in which the player has a grid with the simple task of turning off all the lights. The catch? Toggling a light toggles the adjacent ones as well. This game is based on previous work I had done in an Intro to Programming class.</p>
+                        <a class="btn btn-dark btn-lg" href="https://github.com/Sean-Stilwell/LightsOut" role="button">View on GitHub</a>
+                        <a class="btn btn-dark btn-lg" href="https://play.google.com/store/apps/details?id=app.game.lightsout" role="button">Google Play</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="project">
-                <a href="clinicapp.html"><p><em>Clinic Management Application</em></p></a>
-                <p>This is an Android application developed in Java using Android Studio that allows patients and staff to conduct their affairs at a clinic. Staff can manage their hours of operation or the 
-                    services they offer, while patients can search these services and book appointments with doctors. The program uses a Firebase database to store its data, and was created for my Intro to Software 
-                    Engineering (SEG2505) class at uOttawa.
-                </p>
-                <img src="images/java.png" height="65" width="65" title="Java" alt="Java">
-                <img src="images/android.png" height="65" width="65" title="Android" alt="Android">
-                <img src="images/firebase.png" height="65" width="65" title="Firebase" alt="Firebase">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jumbotron" style="padding-top: 30px; padding-bottom: 30px;">
+                        <h4>Clinic Management Application</h4>
+                        <p>This is an Android application developed in Java using Android Studio that allows patients and staff to conduct their affairs at a clinic. Staff can manage their hours of operation or the services they offer, while patients can search these services and book appointments with doctors. The program uses a Firebase database to store its data, and was created for my Intro to Software Engineering (SEG2505) class at uOttawa.</p>
+                        <a class="btn btn-dark btn-lg" href="https://github.com/Sean-Stilwell/ClinicApp" role="button">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="jumbotron" style="padding-top: 30px; padding-bottom: 30px;">
+                        <h4>Tic Tac Toe</h4>
+                        <p>Implementations of the classic Tic Tac Toe game written in a variety of languages and a variety of tools, generally to help me learn a language and associated skills (such as basic UI design in that language, as well as the proper use of arrays or matrices). Implemented are an Android version in Java, two C# versions in .NET and Unity, as well as console-based Python, Java, Prolog, and Scheme versions.</p>
+                        <a class="btn btn-dark btn-lg" href="https://github.com/Sean-Stilwell/Tic-Tac-Toes" role="button" style="padding-top: 7;">View on GitHub</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="project">
-                <a href="finalgradecalculator.html"><p><em>Final Grade Calculator</em></p></a>
-                <p>This JavaScript tool allows users to determine what mark they need on a final exam in order to achieve their desired goal in a class, simply by entering their current mark, their goal, and 
-                    how much their final exam is worth of their mark.
-                </p>
-                <img src="images/html5.png" height="65" width="65" title="HTML5" alt="HTML5">
-                <img src="images/css.png" height="65" width="65" title="CSS" alt="CSS">
-                <img src="images/javascript.png" height="65" width="65" title="JavaScript" alt="JavaScript">
+            <div class="jumbotron jumbotron-fluid text-center text-md-left" style="padding-top: 0; padding-bottom: 0;">
+                <div class="row" style="padding-top:20;">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p style="text-align: left; padding-left: 10px;">© 2020 Copyright: <a href="index.html"> Sean Stilwell</a></p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align: right;"> 
+                        <a href="mailto:sstil051@uottawa.ca"><img src="image/email.png" alt="Email" height="18" width="25" style="margin-left:5px; margin-right:5px;"></a>
+                        <a href="https://www.linkedin.com/in/sean-stilwell/"><img src="image/linkedin.png" alt="LinkedIn" height="23" width="25" style="margin-left:5px; margin-right:5px;"></a>   
+                        <a href="https://github.com/Sean-Stilwell"><img src="image/github.png" alt="GitHub" height="25" width="25" style="margin-left:5px; margin-right:5px;"></a>   
+                        <a href="https://www.instagram.com/theseanstilwell/"><img src="image/instagram.png" alt="Instagram" height="25" width="25" style="margin-left:5px; margin-right:5px;"></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="project">
-                <a href="https://github.com/Sean-Stilwell/Tic-Tac-Toes"><p><em>Tic Tac Toe</em></p></a>
-                <p>Implementations of the classic Tic Tac Toe game written in a variety of languages and a variety of tools, generally to help me learn a language and associated skills (such as 
-                    basic UI design in that language).
-                </p>
-                <span class="grouping">
-                    <img src="images/java.png" height="65" width="65" title="Java" alt="Java">
-                    <img src="images/android.png" height="65" width="65" title="Android" alt="Android">
-                </span>
-                <span class="grouping">
-                    <img src="images/csharp.png" height="65" width="65" title="C#" alt="C#">
-                    <img src="images/unity.png" height="65" width="65" title="Unity" alt="Unity">
-                </span>
-                <span class="grouping">
-                    <img src="images/csharp.png" height="65" width="65" title="C#" alt="C#">
-                    <img src="images/netframework.png" height="65" width="65" title=".NET Framework" alt=".NET Framework">
-                </span>
-                <span class="grouping">
-                    <img src="images/python.png" height="65" width="65" title="Python" alt="Python">
-                </span>
-                <span class="grouping">
-                    <img src="images/racket.png" height="65" width="65" title="Racket/Scheme" alt="Racket/Scheme">
-                </span>
-                <span class="grouping">
-                    <img src="images/prolog.png" height="65" width="65" title="Prolog" alt="Prolog">
-                </span>
-            </div>
-        </div>
-        <div class="footer">
-            <a href="mailto:sstil051@uottawa.ca"><img src="images/email.png" height="30" width="30" title="Email" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/sean-stilwell/"><img src="images/linkedin.png" height="30" width="30" title="LinkedIn" alt="LinkedIn"></a>
-            <a href="https://github.com/Sean-Stilwell"><img src="images/github.png" height="30" width="30" title="GitHub" alt="GitHub"></a>
-            <a href="https://medium.com/@seanstilwell"><img src="images/medium.png" height="30" width="30" title="Medium" alt="Medium"></a>
-            <a href="https://leetcode.com/stilwell/"><img src="images/leetcode.png" height="30" width="30" title="LeetCode" alt="LeetCode"></a>
-            <P>Created by Sean Stilwell</P>
         </div>
     </BODY>
 </HTML>
