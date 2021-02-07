@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
 </head>
 
 <body id="page-top">
@@ -48,7 +50,7 @@
             <h2 class="text-uppercase text-center text-white">About Me</h2>
             <hr class="star-light mb-5">
             <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 45px;padding-top: 0px;">I'm a third-year Computer Science student currently enrolled at the University of Ottawa in Canada. Ever since I first learned to code in High School, I've been passionate about software development. I have experience with numerous programming languages and technologies, and am always eager to learn new skills!<br></p>
-            <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 45px;padding-top: 0px;">I'm fluently bilingual, having attained my DELF B2 certification from the Ministry of Education of France, as well as passing the Second Language Certification Test at the University of Ottawa. Bilingualism is important to me, I've helped promote the French language for clubs at uOttawa, such as the Google Developer Student Club, and promoted uOttawa's French Immersion program to high school classes.<br></p>
+            <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 45px;padding-top: 0px;">I'm fluently bilingual, having attained my DELF B2 certification from the Ministry of Education of France, as well as the Second Language Certification from the University of Ottawa. Bilingualism is important to me, I've helped promote the French language for clubs at uOttawa, such as the Google Developer Student Club, and promoted uOttawa's French Immersion program to high school classes.<br></p>
         </div>
     </section>
     <section id="about-1" class="bg-primary text-white mb-0" style="background: linear-gradient(var(--white), white);color: var(--secondary);">
@@ -93,7 +95,7 @@
             <h2 class="text-uppercase text-center text-white">Portfolio</h2>
             <hr class="star-light mb-5">
             <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 15px;padding-top: 0px;">I've completed a variety of projects as part of my degree or out of personal interest. Below is some of my favourite work that showcases a variety of skills that I've acquired over the last few years. You can click each project to view its GitHub repository or other links.<br></p>
-            <div class="row">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: var(--secondary);">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
@@ -103,6 +105,13 @@
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: var(--secondary);">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/mefit2.png">
+                    </a></div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: var(--secondary);">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/conjeuguez.png">
                     </a></div>
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: var(--secondary);">
@@ -190,6 +199,24 @@
                     </div>
                 </div>
                 <div class="modal-footer pb-5" style="height: 95px;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/Sean-Stilwell/Kerbal-Space-Program-Automation" style="margin-bottom: 0px;"><i class="fa fa-github"></i>&nbsp;GitHub</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body" style="padding-bottom: 0px;">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0" style="padding-bottom: 31px;">Con-Jeu-Guez French Verb App</h2><img class="img-fluid mb-5" src="assets/img/portfolio/conjeuguez.png">
+                                <p class="mb-5">This is a French Verb learning app for Android developed as part of uOttaHack 4 in 2021. The game is based on my experience in French Immersion, and gives students the opportunity to practice &amp; drill their chosen verb tenses until mastery, as well as to track their progress over time. This app was developed in Android Studio using Java.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5" style="height: 95px;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/Sean-Stilwell/uOttaHack4" style="margin-bottom: 0px;"><i class="fa fa-github"></i>&nbsp;GitHub</a><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://devpost.com/software/con-jeu-guez" style="margin-bottom: 0px;"><i class="fab fa-dev"></i>&nbsp;DevPost</a></div>
             </div>
         </div>
     </div>
