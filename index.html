@@ -51,9 +51,9 @@
         <div class="container">
             <h2 class="text-uppercase text-center text-white">About Me</h2>
             <hr class="star-light mb-5">
-            <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 35px;padding-top: 0px;margin-bottom: 0px;margin-top: 0px;">I am a 4th-year student at the University of Ottawa, currently completing an Honours Bachelor of Science in Computer Science and an accelerated Master of Computer Science. I have two years of work experience in the Government of Canada performing a variety of roles.&nbsp;<br></p>
-            <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 35px;padding-top: 0px;margin-bottom: 0px;margin-top: 0px;">My research focus is on Natural Language Processing for legal documents. I'm highly experienced with Python, having performed geospatial, bioinformatics, NLP, and other assorted AI/ML tasks with it. I also enjoy web development and have experience with React, Node.js, and Ruby on Rails. I have back-end experience with Firebase and PostgreSQL. I'm also comfortable with C, C++, C#, Kotlin, Swift, and Go.</p>
-            <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 35px;padding-top: 0px;margin-bottom: 0px;margin-top: 0px;">I'm fluently bilingual in English and French. I am certified at the B2 level by the Ministry of Education of France, and attained the uOttawa's Second Language Certification for French.<br></p>
+            <p style="font-size: 20px;">I am a 4th-year student at the University of Ottawa, currently completing an Honours Bachelor of Science in Computer Science and an accelerated Master of Computer Science. I have two years of work experience in the Government of Canada performing a variety of roles.&nbsp;<br></p>
+            <p style="font-size: 20px;">My research focus is on Natural Language Processing for legal documents. I'm highly experienced with Python, having performed geospatial, bioinformatics, NLP, and other assorted AI/ML tasks with it. I also enjoy web development and have experience with React, Node.js, and Ruby on Rails. I have back-end experience with Firebase and PostgreSQL. I'm also comfortable with C, C++, C#, Kotlin, Swift, and Go.</p>
+            <p style="font-size: 20px;">I'm fluently bilingual in English and French. I am certified at the B2 level by the Ministry of Education of France, and attained the uOttawa's Second Language Certification for French.<br></p>
         </div>
     </section>
     <section id="about-1" class="bg-primary text-white mb-0" style="background: linear-gradient(var(--white), white);color: var(--secondary);">
@@ -132,28 +132,44 @@
         <div class="container" style="color: var(--white);">
             <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
             <hr class="star-dark mb-5">
-            <p style="font-size: 20px;padding: 15px;margin: 15px;padding-bottom: 15px;padding-top: 0px;color: var(--secondary);">I've completed a variety of projects as part of my degree or out of personal interest. Below is some of my favourite work that showcases a variety of skills that I've acquired over the last few years. You can click each project to view its GitHub repository or other links.<br></p>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: rgb(24,188,156);">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/header.png" alt="Lights Out Banner">
-                    </a></div>
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: rgb(24,188,156);">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/mefit2.png" alt="MeFit Competition App Banner">
-                    </a></div>
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: rgb(24,188,156);">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/conjeuguez.png" alt="Con-jeu-guez French Learning App Banner">
-                    </a></div>
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="background: rgb(24,188,156);">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/kerbal.png" alt="Kerbal Space Program Automated Rockets Banner">
-                    </a></div>
+            <p style="font-size: 20px;color: var(--secondary);">I've completed a variety of projects as part of my degree or out of personal interest. Below is some of my favourite work that showcases a variety of skills that I've acquired over the last few years. You can click each project to view its GitHub repository or other links.<br></p>
+            <div class="row justify-content-start align-items-start">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: var(--secondary);">Legal Named Entity Extraction</h4>
+                            <p class="card-text" style="color: var(--secondary);">Undergraduate Honours Project, submitted for Task 6 at the SemEval-2023 conference. Trained a BERT model to predict named entities in legal texts.<br><br>Tools: Python, Torch, Scikit-learn</p><a class="card-link" href="#">GitHub</a><a class="card-link" href="#">Paper</a>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: var(--secondary);">Vehicle &amp; Ped Dash Camera Detection</h4>
+                            <p class="card-text" style="color: var(--secondary);">Used TorchVision and OpenCV to detect vehicles and pedestrians from dash camera footage. Achieved MOTA scores of 63% and 65% for pedestrians and vehicles.<br><br>Tools: Python, TorchVision, OpenCV</p><a class="card-link" href="https://youtu.be/PmACPNPXqaA">Vehicle Result</a><a class="card-link" href="https://youtu.be/rMrztUSQGik">Ped Result</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: var(--secondary);">Lights Out! Web Game</h4>
+                            <p class="card-text" style="color: var(--secondary);">Puzzle game developed with React Native. The goal of the puzzle is to turn off a grid of lights, but toggling a light also toggles the adjacent ones.<br><br>Tools: React Native, Javascript, CSS</p><a class="card-link" href="https://github.com/Sean-Stilwell/Lights_Out">GitHub</a><a class="card-link" href="https://seanstilwell.ca/Lights_Out/">Play Now!</a>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: var(--secondary);">MeFit Competition Web Application</h4>
+                            <p class="card-text" style="color: var(--secondary);">Web application to allow athletic competition hosting. Allows partners to create competitions and for athletes to view their results.<br><br>Tools: PHP, PostgreSQL, CSS</p><a class="card-link" href="https://github.com/Sean-Stilwell/competitionapp">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color: var(--secondary);">Semantic Analysis of COVID-19 Tweets</h4>
+                            <p class="card-text" style="color: var(--secondary);">Trained a BERT model to analyze the sentiment of COVID-19-related tweets. Achieved an F-1 score of 79.6%.<br><br>Tools: Python, TensorFlow, Scikit-learn, SpaCy</p><a class="card-link" href="https://github.com/marzi-heidari/nlp_classification">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -181,81 +197,9 @@
         </div>
     </footer>
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small style="font-size: 16px;">Copyright ©&nbsp;Sean Stilwell 2021</small></div>
+        <div class="container"><small style="font-size: 16px;">Copyright ©&nbsp;Sean Stilwell 2022</small></div>
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0" style="padding-bottom: 30px;">Lights Out!</h2><img class="img-fluid mb-5" src="assets/img/portfolio/header.png" style="margin-bottom: 24px;" alt="Lights Out Banner">
-                                <p class="mb-5" style="margin-bottom: 0px;height: 35px;">This is an game developed with React Native in Summer 2022.&nbsp;<br>The player has a grid with the simple task of turning off all the lights. The catch? Toggling a light toggles the adjacent ones as well.&nbsp;I previously built this game with Java on Android Studio in 2020, but I consider that code an abomination and wanted to remake it.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5" style="margin-top: 0px;padding-top: 48px;height: auto;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="http://seanstilwell.ca/Lights_Out/"><i class="fas fa-gamepad"></i>&nbsp;Play Now!</a><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/Sean-Stilwell/Lights_Out" style="margin-right: 4px;margin-left: 4px;"><i class="fa fa-github"></i>&nbsp;GitHub</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0" style="padding-bottom: 30px;">Mefit Fitness Competition App</h2><img class="img-fluid mb-5" src="assets/img/portfolio/mefit2.png" alt="MeFit Competition App Banner">
-                                <p class="mb-5">This web application allows corporate partners to create and manage athletic competitions, as well as athletes participating in them, and their results. This application was created for my Databases I (CSI2532) class at uOttawa, and is developed using HTML5, CSS, and PHP, in addition to a PostgreSQL database.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5" style="padding-top: 0px;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/Sean-Stilwell/competitionapp" style="margin-bottom: 0px;"><i class="fa fa-github"></i>&nbsp;GitHub</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body" style="padding-bottom: 0px;">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0" style="padding-bottom: 31px;">Automated Rockets in Kerbal Space Program</h2><img class="img-fluid mb-5" src="assets/img/portfolio/kerbal.png" alt="Kerbal Space Program Automated Rockets Banner">
-                                <p class="mb-5">These are several Python scripts that allow for automated flight of rockets in Kerbal Space Program using the game's Remote Procedure Call Server mod. Examples of launches are the development of a satellite constellation (based on SpaceX Starlink), as well as visits to a space station in low orbit.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5" style="height: 95px;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/Sean-Stilwell/Kerbal-Space-Program-Automation" style="margin-bottom: 0px;"><i class="fa fa-github"></i>&nbsp;GitHub</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4" style="height: 100%;width: 100%;">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="width: auto;height: auto;"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body" style="padding-bottom: 0px;height: auto;padding-top: 0px;width: auto;">
-                    <div class="container text-center" style="width: 100%;height: auto;">
-                        <div class="row" style="width: auto;height: auto;">
-                            <div class="col-lg-8 mx-auto" style="width: 100%;height: auto;">
-                                <h2 class="text-uppercase text-secondary mb-0" style="padding-bottom: 31px;">Con-Jeu-Guez&nbsp;</h2><img class="img-fluid mb-5" src="assets/img/portfolio/conjeuguez.png" style="width: auto;height: auto;" alt="Con-jeu-guez French Learning App Banner">
-                                <p class="mb-5" style="width: auto;height: auto;">This is an Android app for learning French verbs developed as part of uOttaHack 4. The game is based on my experience in French Immersion, and gives students the opportunity to practice &amp; drill their chosen verb tenses until mastery, as well as to track their progress over time.&nbsp; I also wrote about my work on DevPost to submit for the hackathon.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5" style="height: 135px;padding-top: 0px;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/Sean-Stilwell/uOttaHack4" style="margin-bottom: 0px;"><i class="fa fa-github"></i>&nbsp;GitHub</a><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://play.google.com/store/apps/details?id=app.example.conjeuguez" style="margin-right: 4px;margin-left: 4px;"><i class="fa fa-play-circle"></i>&nbsp;Google Play</a><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://devpost.com/software/con-jeu-guez" style="margin-bottom: 0px;"><i class="fab fa-microblog"></i>&nbsp;DevPost</a></div>
-            </div>
-        </div>
-    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
