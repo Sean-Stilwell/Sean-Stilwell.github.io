@@ -10,4 +10,3 @@ hr.star-dark, hr.star-light {
 [aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {
   display: none;
 }
-
