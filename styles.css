@@ -1,0 +1,37 @@
+hr::after {
+    content: "\f785";
+    font-family: "Font Awesome 5 Brands";
+  }
+hr::after {
+color: #d3080c;
+background-color: #fff;
+}
+hr::after {
+position: relative;
+top: -.8em;
+display: inline-block;
+padding: 0 .25em;
+font-family: FontAwesome;
+font-size: 2em;
+}
+hr {
+border-color: #2b4380;
+}
+hr {
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top-width: medium;
+    border-top-style: none;
+    border-top-color: #2b4380;
+    border-right-color: #2b4380;
+    border-bottom-color: #2b4380;
+    border-left-color: #2b4380;
+    border-top: .25rem solid;
+    border-top-color: #2b4380;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
