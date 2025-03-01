@@ -38,3 +38,11 @@ hr {
     height: fit-content;
   }
 }
+
+@media (max-width: 450px) {
+  .profile-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
