@@ -1,0 +1,30 @@
+# .github/workflows/link-check.yml
+name: Link check
+on:
+  pull_request:
+    paths: ["**/*.html", "**/*.md"]
+  schedule:
+    - cron: "0 13 * * 1"  # Mondays 9am Toronto is 13:00 UTC
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: step-security/harden-runner@v2  # optional hardening
+        with: { egress-policy: audit }
+      - id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --base . --no-progress --verbose "./**/*.html" "./**/*.md"
+          format: markdown
+          output: ./lychee/out.md
+          fail: false
+      - if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'schedule'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Broken links detected"
+          content-filepath: ./lychee/out.md
+          labels: report, automated-issue
