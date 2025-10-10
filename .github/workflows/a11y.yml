@@ -1,0 +1,21 @@
+name: Accessibility (pa11y-ci)
+on:
+  schedule:
+    - cron: '0 14 * * 6'
+jobs:
+  pa11y:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i -g pa11y-ci
+      - name: Run Pa11y CI on key pages
+        run: |
+          pa11y-ci \
+            https://seanstilwell.ca/ \
+            https://seanstilwell.ca/index-fr.html
