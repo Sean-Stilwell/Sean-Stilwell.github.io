@@ -46,3 +46,17 @@ hr {
     margin-right: auto;
   }
 }
+
+.socials{
+  display:flex;
+  flex-direction:column;
+  gap: .5rem;
+}
+
+@media (max-height: 850px){
+  .socials{
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    overflow:visible;
+  }
+}
