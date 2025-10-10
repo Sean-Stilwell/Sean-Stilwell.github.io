@@ -2,6 +2,7 @@ name: Lighthouse
 on:
   schedule:
     - cron: '0 14 * * 6'
+  workflow_dispatch:
 jobs:
   lighthouse:
     runs-on: ubuntu-latest

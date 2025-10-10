@@ -2,6 +2,7 @@ name: Accessibility (pa11y-ci)
 on:
   schedule:
     - cron: '0 14 * * 6'
+  workflow_dispatch:
 jobs:
   pa11y:
     runs-on: ubuntu-latest
