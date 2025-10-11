@@ -1,0 +1,73 @@
+name: Auto Release (date tag)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+# Ensure we can create/delete tags & releases
+permissions:
+  contents: write
+
+# Prevent overlapping runs for the same branch
+concurrency:
+  group: "auto-release-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compute date-based tag (America/Toronto)
+        id: tag
+        run: |
+          TAG="$(TZ=America/Toronto date +'%Y-%m-%d')"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+
+      - name: Show computed tag
+        run: echo "Tag to create: $TAG"
+
+      - name: Ensure GitHub CLI is authenticated
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh auth status
+
+      # If a release (and its tag) already exists for today, remove them so we can recreate
+      - name: Delete existing release (if any)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            echo "Existing release $TAG found — deleting..."
+            gh release delete "$TAG" -y
+          else
+            echo "No existing release named $TAG"
+          fi
+
+      - name: Delete existing tag ref (if any)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X DELETE "repos/${{ github.repository }}/git/refs/tags/$TAG" || echo "Tag ref $TAG not present"
+
+      - name: Create release for today's date
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NOTES="Automated release for $TAG (triggered by push to ${{ github.ref_name }})"
+          # This will create the tag $TAG at the current commit and make a release pointing to it
+          gh release create "$TAG" \
+            --target "${GITHUB_SHA}" \
+            --title "$TAG" \
+            --notes "$NOTES"
+
+      - name: Output release URL
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release view "$TAG" --json url --jq .url
