@@ -20,3 +20,8 @@ jobs:
           pa11y-ci \
             https://seanstilwell.ca/ \
             https://seanstilwell.ca/index-fr.html
+      - name: Upload Pa11y Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: pa11y-report
+          path: ./pa11y-report.html
