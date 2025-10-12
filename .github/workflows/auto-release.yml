@@ -21,15 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Compute date-based tag (America/Toronto)
-        id: tag
+      - name: Make tag name
+        id: mk
         run: |
-          TAG="$(TZ=America/Toronto date +'%Y-%m-%d')"
+          TAG="$(date -u +%Y.%m.%d)"
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
-          echo "TAG=$TAG" >> "$GITHUB_ENV"
-
-      - name: Show computed tag
-        run: echo "Computed tag is $TAG"
 
       - name: Ensure GitHub CLI is authenticated
         env:
@@ -38,36 +34,35 @@ jobs:
 
       # If a release (and its tag) already exists for today, remove them so we can recreate
       - name: Delete existing release (if any)
-        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view "$TAG" > /dev/null 2>&1; then
-            echo "Existing release $TAG found — deleting..."
-            gh release delete "$TAG" -y
+          if gh release view "${{ steps.mk.outputs.tag }}" > /dev/null 2>&1; then
+            echo "Existing release ${{ steps.mk.outputs.tag }} found — deleting..."
+            gh release delete "${{ steps.mk.outputs.tag }}" -y
           else
-            echo "No existing release named $TAG"
+            echo "No existing release named ${{ steps.mk.outputs.tag }} found"
           fi
 
       - name: Delete existing tag ref (if any)
-        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh api -X DELETE "repos/${{ github.repository }}/git/refs/tags/$TAG" || echo "Tag ref $TAG not present"
+          gh api -X DELETE "repos/${{ github.repository }}/git/refs/tags/${{ steps.mk.outputs.tag }}" || echo "Tag ref ${{ steps.mk.outputs.tag }} not present"
 
-      - name: Create release for today's date
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.mk.outputs.tag }}
+          name: ${{ steps.mk.outputs.tag }}
+          body: |
+            Automated release for ${{ steps.mk.outputs.tag }} (triggered by push to ${{ github.ref_name }})
+
+            **Commit Message:** ${{ github.event.head_commit.message }}
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          NOTES="Automated release for $TAG (triggered by push to ${{ github.ref_name }})"
-          # This will create the tag $TAG at the current commit and make a release pointing to it
-          gh release create "$TAG" \
-            --target "${GITHUB_SHA}" \
-            --title "$TAG" \
-            --notes "$NOTES"
 
       - name: Output release URL
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release view "$TAG" --json url --jq .url
+        run: gh release view "${{ steps.mk.outputs.tag }}" --json url --jq .url

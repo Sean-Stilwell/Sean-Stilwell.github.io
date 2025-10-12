@@ -1,4 +1,4 @@
-# Sean Stilwell — Personal Website
+# Sean Stilwell - Personal Website
 
 ![MIT License](https://img.shields.io/github/license/Sean-Stilwell/Sean-Stilwell.github.io) ![Accessibility check](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Fa11y.yml?label=a11y) ![Lighthouse test](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Flighthouse.yml?label=lighthouse) ![Broken links detection](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Flink-check.yml?label=links) ![GitHub Release](https://img.shields.io/github/v/release/Sean-Stilwell/Sean-Stilwell.github.io)
 
@@ -7,8 +7,6 @@ Static personal site built with the **GC Design System** and deployed via **GitH
 - **Live site:** https://seanstilwell.ca
 - **Repository:** this repo (`Sean-Stilwell.github.io`) serves Pages directly from the default branch.
 
----
-
 ## Features
 
 - Built with the **GC Design System** for consistent, accessible, bilingual-ready UI
@@ -16,8 +14,6 @@ Static personal site built with the **GC Design System** and deployed via **GitH
 - **Custom domain** via `CNAME`
 - **Search-friendly** with `sitemap.xml` / `sitemap.txt`
 - **Custom 404** page
-
----
 
 ## Project structure
 
@@ -32,8 +28,6 @@ Static personal site built with the **GC Design System** and deployed via **GitH
 ├── google*.html   # Search Console site verification
 └── preview.png    # README/Marketplace preview image
 ```
-
----
 
 ## 🚀 Quick start (local)
 
@@ -61,16 +55,12 @@ No framework or build tools required.
 
 > You can also just open `index.html` or `index-fr.html` directly in your browser.
 
----
-
 ## Deployment
 
 This is a user site (<username>.github.io), so GitHub Pages serves from the repository’s default branch root. After pushing to master/main, Pages will update automatically.
 
 * **Custom domain:** managed via the CNAME file. Update its contents to change the domain.
 * **HTTPS:** enable/verify in Repo → Settings → Pages.
-
----
 
 ## Accessibility & GC Design System
 
@@ -80,8 +70,6 @@ Helpful links:
 
 * [GC Design System](https://design-system.alpha.canada.ca/)
 * [Components](https://design-system.alpha.canada.ca/en/components/)
-
----
 
 ## Licence
 
