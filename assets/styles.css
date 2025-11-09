@@ -60,3 +60,9 @@ hr {
     overflow:visible;
   }
 }
+
+@media (max-width: 400px) {
+  .socials i {
+    display: none;
+  }
+}
