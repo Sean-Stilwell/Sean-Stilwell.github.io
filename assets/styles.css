@@ -36,6 +36,7 @@ hr {
     top: 0;
     align-self: start;
     height: fit-content;
+    padding-right: 16px;
   }
 }
 
@@ -48,21 +49,18 @@ hr {
 }
 
 .socials{
-  display:flex;
-  flex-direction:column;
+  display:grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  overflow:visible;
   gap: .5rem;
 }
 
-@media (max-height: 850px){
-  .socials{
-    display:grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    overflow:visible;
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   .socials i {
     display: none;
   }
+}
+
+:root {
+  --gcds-button-width: 100%;
 }
