@@ -53,6 +53,7 @@ hr {
   grid-template-columns: 1fr 1fr; /* 2 columns */
   overflow:visible;
   gap: .5rem;
+  max-width: fit-content;
 }
 
 @media (max-width: 380px) {
