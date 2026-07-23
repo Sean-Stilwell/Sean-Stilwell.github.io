@@ -1,7 +1,12 @@
+:root {
+  --blue-colour: var(--gcds-color-blue-800);
+  --red-colour: var(--gcds-color-red-600);
+}
+
 hr::after {
   content: "\f785";
   font-family: "Font Awesome 7 Brands";
-  color: #d3080c;
+  color: var(--red-colour);
   background-color: #fff;
   position: relative;
   top: -0.7em;
@@ -11,18 +16,12 @@ hr::after {
 }
 
 hr {
-  border-color: #2b4380;
   padding: 0;
   text-align: center;
   border: none;
   border-top-width: medium;
-  border-top-style: none;
-  border-top-color: #2b4380;
-  border-right-color: #2b4380;
-  border-bottom-color: #2b4380;
-  border-left-color: #2b4380;
   border-top: 0.25rem solid;
-  border-top-color: #2b4380;
+  border-color: var(--blue-colour);
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   box-sizing: content-box;

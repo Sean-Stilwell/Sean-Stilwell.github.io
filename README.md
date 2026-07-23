@@ -1,6 +1,6 @@
 # Sean Stilwell - Personal Website
 
-![MIT License](https://img.shields.io/github/license/Sean-Stilwell/Sean-Stilwell.github.io) ![Accessibility check](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Fa11y.yml?label=a11y) ![Lighthouse test](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Flighthouse.yml?label=lighthouse) ![Broken links detection](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Flink-check.yml?label=links) ![GitHub Release](https://img.shields.io/github/v/release/Sean-Stilwell/Sean-Stilwell.github.io)
+![MIT License](https://img.shields.io/github/license/Sean-Stilwell/Sean-Stilwell.github.io) ![Accessibility check](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Fa11y.yml?label=a11y) ![Lighthouse test](https://img.shields.io/github/actions/workflow/status/Sean-Stilwell/Sean-Stilwell.github.io/.github%2Fworkflows%2Flighthouse.yml?label=lighthouse) ![GitHub Release](https://img.shields.io/github/v/release/Sean-Stilwell/Sean-Stilwell.github.io)
 
 Static personal site built with the **GC Design System** and deployed via **GitHub Pages**.
 
@@ -18,18 +18,20 @@ Static personal site built with the **GC Design System** and deployed via **GitH
 ## Project structure
 
 ```
-├── assets/        # Images, styles, scripts (static)
-├── 404.html       # Custom not-found page
-├── CNAME          # Custom domain for GitHub Pages
-├── index.html     # English homepage
-├── index-fr.html  # French homepage
-├── sitemap.xml    # XML sitemap
-├── sitemap.txt    # Plain-text sitemap
-├── google*.html   # Search Console site verification
-└── preview.png    # README/Marketplace preview image
+├─ .github/       # GitHub configuration
+├─ assets/        # Images, styles, scripts (static)
+├─ 404.html       # Custom not-found page
+├─ CNAME          # Custom domain for GitHub Pages
+├─ LICENSE        # MIT License file
+├─ google*.html   # Search Console site verification
+├─ index.html     # English homepage
+├─ index-fr.html  # French homepage
+└─ preview.png    # README/Marketplace preview image
+├─ sitemap.xml    # XML sitemap
+├─ sitemap.txt    # Plain-text sitemap
 ```
 
-## 🚀 Quick start (local)
+## Local setup
 
 No framework or build tools required.
 
@@ -40,6 +42,8 @@ No framework or build tools required.
    ```
 
 2. **Serve locally**
+
+Just open the `index.html` or `index-fr.html` files to get started.
 
 * Using Python 3:
    ```bash
@@ -52,8 +56,6 @@ No framework or build tools required.
    npx http-server -p 8000
    ```
    Open your browser to `http://localhost:8000`
-
-> You can also just open `index.html` or `index-fr.html` directly in your browser.
 
 ## Deployment
 
