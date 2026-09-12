@@ -3,6 +3,10 @@
   --red-colour: var(--gcds-color-red-600);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 hr::after {
   content: "\f785";
   font-family: "Font Awesome 7 Brands";

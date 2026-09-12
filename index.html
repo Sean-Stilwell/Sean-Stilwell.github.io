@@ -34,6 +34,20 @@
         <gcds-container style="text-align: end;">
             <gcds-lang-toggle href="index-fr.html"></gcds-lang-toggle>
         </gcds-container>
+        <!-- <gcds-top-nav label="Top navigation component preview" alignment="end">
+            <gcds-nav-link href="#" slot="home">
+                <span style="display: flex; gap: 20px;">
+                    <img src="./assets/logo_alt.png" height="30px" width="30px"/>
+                    <gcds-text margin-bottom="0" style="align-items: center; flex: 1">
+                        Sean Stilwell
+                    </gcds-text>
+                </span>
+            </gcds-nav-link>
+            <gcds-nav-link href="#aboutme">About Me</gcds-nav-link>
+            <gcds-nav-link href="#education">Education</gcds-nav-link>
+            <gcds-nav-link href="#experience">Experience</gcds-nav-link>
+            <gcds-nav-link href="#portfolio">Portfolio</gcds-nav-link>
+        </gcds-top-nav> -->
         <gcds-grid columns="repeat(auto-fit, minmax(200px, 1fr))" justify-content="center">
             <gcds-container class="profile-container">
                 <img src="./assets/profile_square3-webp.webp" alt="Sean Stilwell"
@@ -68,7 +82,7 @@
                     </gcds-button>
                 </nav>
                 <gcds-date-modified>
-                    2026-07-23
+                    2026-09-12
                 </gcds-date-modified>
             </gcds-container>
             <gcds-container>
@@ -76,19 +90,19 @@
                     About Me
                 </gcds-heading>
                 <gcds-text>
-                    I am an Ottawa-based software developer and acting team lead at Shared Services Canada. 
-                    I build tools that empower federal scientists to access and use cloud resources 
-                    more efficiently. My career in the GC covers a diverse range of work in data science, 
+                    I am an Ottawa-based software developer and acting team lead at Shared Services Canada.
+                    I build tools that empower federal scientists to access and use cloud resources
+                    more efficiently. My career covers a diverse range of work in data science,
                     development, and QA.
                 </gcds-text>
                 <gcds-text>
-                    I hold a MSc and BSc in Computer Science from the University of Ottawa, where my research 
+                    I hold a MSc and BSc in Computer Science from the University of Ottawa, where my research
                     focused on explainable AI and natural language processing. My research used
                     large language models for sentiment analysis while incorporating explainability.
                 </gcds-text>
                 <gcds-text>
-                    I am fluent in French (CCC certified) and speak basic German. I am an amateur 
-                    runner that loves exploring the world with my wife. 
+                    I am fluent in French (CCC certified) and speak basic German. I am a recreational
+                    triathlete that loves exploring the world with my wife.
                 </gcds-text>
                 <hr />
                 <gcds-heading tag="h2" id="education">
@@ -166,9 +180,12 @@
                             Learn more about the FSDH
                         </gcds-link>
                     </gcds-text>
+                    <gcds-text>
+                        <strong>Tools:</strong> Azure, DevOps, Blazor, Python, C#, .NET Framework, PostgreSQL, Vue.js /
+                        VuePress, Google Cloud Platform, Amazon Web Services
+                    </gcds-text>
                 </gcds-details>
-                <gcds-details
-                    details-title="IT Analyst @ Shared Services Canada | May 2023 to Present">
+                <gcds-details details-title="IT Analyst @ Shared Services Canada | May 2023 to Present">
                     <gcds-text>
                         Supporting the development of the Federal Science DataHub
                         <gcds-link external href="https://github.com/ssc-sp/datahub-portal/">
@@ -202,7 +219,7 @@
                         </gcds-link>
                     </gcds-text>
                     <gcds-text>
-                        <strong>Tools:</strong> Microsoft Azure, Blazor, Python, C#, .NET Framework, PostgreSQL
+                        <strong>Tools:</strong> Azure, Blazor, Python, C#, .NET Framework, PostgreSQL
                     </gcds-text>
                 </gcds-details>
                 <gcds-heading tag="h3">
@@ -311,6 +328,32 @@
                 <gcds-heading tag="h2" id="portfolio">
                     Portfolio
                 </gcds-heading>
+                <gcds-details details-title="Blazor Component Library for GC Design System">
+                    <gcds-text>
+                        Personal | C#, Razor
+                    </gcds-text>
+                    <gcds-text>
+                        The GcdsWrapper.Blazor library provides typed Blazor components for the GC
+                        Design System web components.
+                    </gcds-text>
+                    <gcds-text>
+                        The GcdsWrapper.Blazor.Markdown library extends the GcdsWrapper.Blazor library 
+                        to convert Markdown to GC Design System components.
+                    </gcds-text>
+                    <gcds-text>
+                        <gcds-link href="https://seanstilwell.ca/gcds-razor/en/components">
+                            Documentation
+                        </gcds-link>
+                        |
+                        <gcds-link external href="https://github.com/Sean-Stilwell/gcds-razor">
+                            GitHub
+                        </gcds-link>
+                        |
+                        <gcds-link external href="https://www.nuget.org/packages/GcdsWrapper.Blazor/">
+                            NuGet
+                        </gcds-link>
+                    </gcds-text>
+                </gcds-details>
                 <gcds-details details-title="Lights Out! Web Game">
                     <gcds-text>
                         Personal | React Native
@@ -323,8 +366,7 @@
                         <gcds-link href="https://seanstilwell.ca/Lights_Out/">
                             Play the game
                         </gcds-link>
-                    </gcds-text>
-                    <gcds-text>
+                        |
                         <gcds-link external href="https://github.com/Sean-Stilwell/Lights_Out">
                             GitHub
                         </gcds-link>
@@ -342,8 +384,7 @@
                         <gcds-link external href="http://hdl.handle.net/10393/46044">
                             Thesis
                         </gcds-link>
-                    </gcds-text>
-                    <gcds-text>
+                        |
                         <gcds-link external href="https://caiac.pubpub.org/pub/oe1gma4v/release/1">
                             Paper @ Canadian AI 2024 Conference
                         </gcds-link>
@@ -361,8 +402,7 @@
                         <gcds-link external href="https://youtu.be/PmACPNPXqaA">
                             Demo (vehicles)
                         </gcds-link>
-                    </gcds-text>
-                    <gcds-text>
+                        |
                         <gcds-link external href="https://youtu.be/rMrztUSQGik">
                             Demo (pedestrians)
                         </gcds-link>
@@ -384,9 +424,16 @@
                 </gcds-details>
                 <hr />
                 <gcds-container style="margin-top: 10px;">
+                    <span style="display: flex; gap: 20px;">
+                        <img src="./assets/logo_alt.png" height="30px" width="30px"/>
+                        <gcds-text margin-bottom="0" style="align-items: center; flex: 1">
+                            Copyright © Sean Stilwell 2026
+                        </gcds-text>
+                    </span>
+                    <!-- <img src="./assets/logo_alt.png" height="30px" width="30px"/>
                     <gcds-text>
                         Copyright © Sean Stilwell 2026
-                    </gcds-text>
+                    </gcds-text> -->
                 </gcds-container>
             </gcds-container>
         </gcds-grid>
